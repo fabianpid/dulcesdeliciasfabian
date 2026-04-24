@@ -1,6 +1,6 @@
 
 <?php
-include("dulcemomento.php"); // Aquí traes la conexión
+include("index.php"); // Aquí traes la conexión
 
 if(isset($_POST['enviar'])){
     // 1. Recibimos datos
