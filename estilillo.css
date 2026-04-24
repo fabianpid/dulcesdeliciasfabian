@@ -1,0 +1,176 @@
+root {
+    --rosa-pastel: #ffc2d1;
+    --rosa-fuerte: #fb6f92;
+    --fondo: #fff5f8;
+    --texto: #5f4b4b;
+    --blanco: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--blanco);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    color: var(--rosa-fuerte);
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover { color: var(--rosa-fuerte); }
+
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(255,245,248,0.3), rgba(255,194,209,0.3)), url('fondo-pasteleria.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-principal {
+    background: var(--rosa-fuerte);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.btn-principal:hover { transform: scale(1.05); }
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+    color: var(--rosa-fuerte);
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 5%;
+}
+
+.card {
+    background: var(--blanco);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    display: block;
+    font-weight: bold;
+    color: var(--rosa-fuerte);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Tabla de Descuentos */
+.tabla-descuentos {
+    margin: 30px auto;
+    max-width: 800px;
+    background: var(--blanco);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--fondo);
+}
+
+th { background: var(--rosa-pastel); color: var(--texto); }
+
+/* Formulario */
+.form-container { padding: 80px 5%; display: flex; justify-content: center; }
+
+.form-card {
+    background: var(--blanco);
+    padding: 50px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--rosa-fuerte);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover { background: #e63946; }
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
