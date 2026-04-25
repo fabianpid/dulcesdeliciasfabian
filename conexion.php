@@ -1,9 +1,10 @@
  <?php
-$host = $_ENV['MYSQLHOST'];
-$port = $_ENV['MYSQLPORT'];
-$user = $_ENV['MYSQLUSER'];
-$pass = $_ENV['MYSQLPASSWORD'];
-$db   = $_ENV['MYSQL_DATABASE'];
+// Usamos getenv() que es el método más seguro en Railway
+$host = getenv('MYSQLHOST');
+$port = getenv('MYSQLPORT');
+$user = getenv('MYSQLUSER');
+$pass = getenv('MYSQLPASSWORD');
+$db   = getenv('MYSQL_DATABASE');
 
 $con = mysqli_connect($host, $user, $pass, $db, $port);
 
