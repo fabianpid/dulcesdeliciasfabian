@@ -10,7 +10,7 @@ if(isset($_POST['enviar'])){
     $producto = $_POST['producto'];
     $cantidad = $_POST['cantidad'];
     // 2. Intentamos insertar
-    $sql = "INSERT INTO informacion VALUES (NULL, '$nombre', '$telefono', '$mensaje', '$correo', '$producto', '$cantidad')";
+   $sql = "INSERT INTO informacion (nombre, telefono, mensaje, correo, producto, cantidad) VALUES ('$nombre', '$telefono', '$mensaje', '$correo', '$producto', '$cantidad')";
     $query = mysqli_query($con, $sql);
 
     if($query){
