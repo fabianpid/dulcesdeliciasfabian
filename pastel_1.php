@@ -6,13 +6,13 @@ include("conexion.php");
 if(isset($_POST['enviar'])){
     // 1. Recibimos datos
     $nombre = $_POST['nombre'];
-    $telefono = $_POST['telefono'];
+    $telefono = $_POST['teléfono'];
     $mensaje = $_POST['mensaje'];
     $correo = $_POST['correo'];
     $producto = $_POST['producto'];
     $cantidad = $_POST['cantidad'];
     // 2. Intentamos insertar
-   $sql = "INSERT INTO informacion (nombre, telefono, mensaje, correo, producto, cantidad) VALUES ('$nombre', '$telefono', '$mensaje', '$correo', '$producto', '$cantidad')";
+   $sql = "INSERT INTO informacion (nombre, télefono, mensaje, correo, producto, cantidad) VALUES ('$nombre', '$télefono', '$mensaje', '$correo', '$producto', '$cantidad')";
     $query = mysqli_query($con, $sql);
 
     if($query){
