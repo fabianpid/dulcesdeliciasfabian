@@ -115,7 +115,7 @@
                 <input type="text" name="correo" placeholder="Tu correo" required>
             </div>
             <div class="input-group">
-                <input type="text" name="télefono" placeholder="Tu teléfono" required>
+                <input type="text" name="telefono" placeholder="Tu teléfono" required>
             </div>
             <div class="input-group">
                 <textarea name="mensaje" placeholder="¿Qué dulce momento buscas hoy?" required></textarea>
